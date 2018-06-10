@@ -4,19 +4,14 @@ var playlist = {
 };
 
 function updatePlaylist(playlist, nameOfArtist, titleOfSong) {
-  
-  return 
-
-function removeFromPlayList(obj, artist){
-  return delete.obj[key];
+  playlist[nameOfArtist] = titleOfSong;
+  return; 
 }
 
-function updatePlaylist (playlist, nameOfArtist, titleOfSong) {
-playlist[nameOfArtist] = titleOfSong;
-return;
+function removeFromPlayList(playlist, artistName){
+  delete playlist[artistName];
+  return;
 }
 
-function removeFromPlaylist (playlist, artistName) {
-delete playlist[artistName];
-return;
-}
+
+
